@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>S catering</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav__header">
+      <div class="logo nav__logo">
+        <a href="#">S&nbsp;<span>Catering</span></a>
+        
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <span><i class="ri-menu-line"></i></span>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#special">Special</a></li>
+      <li><a href="#chef">Chef</a></li>
+      <li><a href="#client">Clients</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+<div class="nav__btn">
+  <a href="https://wa.me/918921327212" target="_blank">
+    <button class="btn" style="background-color: #25D366; color: white;">
+      <i class="ri-whatsapp-fill"></i>
+    </button>
+  </a>
+</div>
+
+
+  </nav>
+  <header class="section__container header__container" id="home">
+    <div class="header__image">
+      <img id="headerImage" src="assets/biriyani.png" alt="Header Image" />
+    </div>
+    <div class="header__content">
+      <h1>Delicious Catering for <span>Every Occasion</span></h1>
+      <p class="section__description">
+        Authentic Kerala flavors crafted with passion. From weddings to events, our catering service delivers
+        unforgettable meals with traditional taste and modern service.
+      </p>
+      <div class="header__btn">
+        <a href="tel:+918921327212">
+          <button class="btn" style="background-color: #25D366;">Call Now</button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+
+  <script>
+    const headerImages = [
+      "assets/biriyani.png",
+      "assets/pngwing.com.png",
+      "assets/pngwing.com__2_-removebg-preview.png"
+    ];
+
+    let currentHeaderImage = 0;
+    const headerImgElement = document.getElementById("headerImage");
+
+    setInterval(() => {
+      currentHeaderImage = (currentHeaderImage + 1) % headerImages.length;
+      headerImgElement.src = headerImages[currentHeaderImage];
+    }, 3000); // change every 3 seconds
+  </script>
+
+
+  <section class="section__container special__container" id="special">
+    <h2 class="section__header">What We Serve</h2>
+    <p class="section__description">
+      We cater a rich variety of vegetarian and non-vegetarian Kerala dishes, perfect for weddings, housewarming, and
+      celebrations.
+    </p>
+
+    <div class="special__grid">
+
+      <!-- Chicken Biriyani -->
+      <div class="special__card">
+        <img src="assets/biriyani.png" alt="Chicken Biriyani" />
+        <h4>Chicken Biriyani</h4>
+        <p>
+          Aromatic basmati rice layered with flavorful chicken masala, cooked to perfection with Kerala spices.
+        </p>
+        <div class="special__ratings">
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+        </div>
+        <div class="special__footer">
+          <a href="tel:+918921327212">
+            <button class="btn" style="background-color: #25D366;">Call to Order</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Sadya -->
+      <div class="special__card">
+        <img src="assets/pngwing.com__2_-removebg-preview.png" alt="Sadya" />
+        <h4>Sadya</h4>
+        <p>
+          A traditional Kerala vegetarian feast served on a banana leaf — a perfect celebration of flavors and culture.
+        </p>
+        <div class="special__ratings">
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+        </div>
+        <div class="special__footer">
+          <a href="tel:+918921327212">
+            <button class="btn" style="background-color: #25D366;">Call to Order</button>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Masala Dosa -->
+      <div class="special__card">
+        <img src="assets/pngwing.com.png" alt="Masala Dosa" />
+        <h4>Masala Dosa</h4>
+        <p>
+          Crispy golden dosa stuffed with spiced potato masala, served with coconut chutney and sambar — a true South
+          Indian classic.
+        </p>
+        <div class="special__ratings">
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+        </div>
+        <div class="special__footer">
+          <a href="tel:+918921327212">
+            <button class="btn" style="background-color: #25D366;">Call to Order</button>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section__container explore__container">
+    <div class="explore__image">
+      <img src="assets/pngwing.com (3).png" alt="Natural Ingredients" />
+    </div>
+    <div class="explore__content">
+      <h1 class="section__header">Fresh & Natural Ingredients in Every Dish</h1>
+      <p class="section__description">
+        We believe great taste starts with nature. Our dishes are prepared using farm-fresh vegetables, aromatic spices,
+        and high-quality natural ingredients — just like home.
+      </p>
+      <div class="explore__btn">
+        <a href="https://wa.me/+918921327212" target="_blank">
+          <button class="btn" style="background-color: #25D366; color: white;">
+            Chat on WhatsApp <span><i class="ri-whatsapp-line"></i></span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+<section class="section__container banner__container">
+
+  <!-- Card 1: Fast & On-Time Delivery -->
+  <div class="banner__card">
+    <span class="banner__icon"><i class="ri-truck-fill"></i></span>
+    <h4>Fast & On-Time Delivery</h4>
+    <p>
+      We make sure your food reaches fresh, hot, and on time — whether it’s for a small gathering or a big function. No delays, no worries!
+    </p>
+    <a href="https://wa.me/+918921327212" target="_blank">
+      WhatsApp to Book
+      <span><i class="ri-arrow-right-line"></i></span>
+    </a>
+  </div>
+
+  <!-- Card 2: Quality & Hygiene Guaranteed -->
+  <div class="banner__card">
+    <span class="banner__icon"><i class="ri-shield-check-fill"></i></span>
+    <h4>Top Quality & Hygiene</h4>
+    <p>
+      We cook with fresh ingredients in a clean kitchen. From cooking to packing, we follow strict hygiene standards so you can eat with confidence.
+    </p>
+    <a href="#about">
+      Know More
+      <span><i class="ri-arrow-right-line"></i></span>
+    </a>
+  </div>
+
+  <!-- Card 3: Trusted by Families & Events -->
+  <div class="banner__card">
+    <span class="banner__icon"><i class="ri-hand-heart-fill"></i></span>
+    <h4>Trusted Service</h4>
+    <p>
+      Your trust is everything. We’ve served hundreds of families and functions with honest service, good food, and happy smiles all around.
+    </p>
+    <a href="#testimonials">
+      See Reviews
+      <span><i class="ri-arrow-right-line"></i></span>
+    </a>
+  </div>
+
+</section>
+
+
+<section class="chef" id="chef">
+  <img src="assets/topping.png" alt="topping" class="chef__bg" />
+  <div class="section__container chef__container">
+    
+    <div class="chef__image">
+      <img src="assets/chef.png" alt="Kerala Cook" />
+    </div>
+
+    <div class="chef__content">
+      <h2 class="section__header">Home-Cooked by Experienced Hands</h2>
+      <p class="section__description">
+        Our dishes are prepared by skilled and experienced cooks who bring the warmth and taste of traditional Kerala kitchens into every meal. No shortcuts — just real food made with love.
+      </p>
+      <ul class="chef__list">
+        <li>
+          <span><i class="ri-checkbox-fill"></i></span>
+          Cooked fresh daily using local ingredients.
+        </li>
+        <li>
+          <span><i class="ri-checkbox-fill"></i></span>
+          Authentic Kerala taste passed down through generations.
+        </li>
+        <li>
+          <span><i class="ri-checkbox-fill"></i></span>
+          Every meal made with care, hygiene, and heart.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  <footer class="footer" id="contact">
+  <div class="section__container footer__container">
+    
+    <!-- Branding Column -->
+    <div class="footer__col">
+      <div class="logo footer__logo">
+        <a href="#">S <span>Catering</span></a>
+      </div>
+      <p class="section__description">
+        Serving traditional Kerala vegetarian dishes with homely taste and heart. From poojas to weddings we bring authentic flavors to your special day.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer__col">
+      <h4>Quick Links</h4>
+      <ul class="footer__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#special">Our Dishes</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer__col">
+      <h4>Our Services</h4>
+      <ul class="footer__links">
+        <li><a href="#">Event Catering</a></li>
+        <li><a href="#">Sadya Preparation</a></li>
+        <li><a href="#">Custom Menu</a></li>
+        <li><a href="#">Home Delivery</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <ul class="footer__links">
+        <li><a href="tel:+919876543210">📞 +91 8921327212</a></li>
+        <!-- <li><a href="mailto:thattukadacatering@gmail.com">📧 Email Us</a></li> -->
+        <li><a href="https://wa.me/+918921327212" target="_blank">💬 WhatsApp Chat</a></li>
+        <li><a href="#">Beach road, Chavakkad, Thrissur</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+<div class="footer__bar">
+  © 2025 S Catering. All rights reserved.
+</div>
+
+</footer>
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
